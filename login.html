@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            height: 90vh;
+            width: 100%;
+            background-image: url(3.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        form {
+            height: 40vh;
+            width: 500px;
+            margin: 50px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #fff;
+            background: #d5d2d2;
+            padding: 10px 15px;
+            overflow: hidden;
+        }
+        input {
+            width: 200px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: transparent;
+            border-bottom: 1px solid #000;
+        }
+        button {
+            background: #777;
+            color: #000;
+            margin: 10px 2px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        a {
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <form action="login.php" method="post">
+        <h2>Remote banking</h2>
+        <label for="">Account number</label><br>
+        <input type="text" name="accountNo" placeholder="XXXX-XXXX-XXXX" id="" required><br>
+        <label for="">Password</label><br>
+        <input type="password" name="pin" id=""><br>
+        <button name="submit">Login &nbsp;<i class="fa-solid fa-lock fa-bounce"></i></button><br>
+        <a href="#">Register</a>
+    </form>
+</body>
+</html>
