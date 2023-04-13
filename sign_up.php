@@ -22,8 +22,8 @@ if ($password != $repassword) {
 } elseif ($cell.length() !=10) {
     echo "Cellphone number should have 10 digits!";
 } else {
-    $stmt = $conn -> prepare("INSERT INTO info(name,lastname,email,password,re_enter) VALUES(?,?,?,?,?);");
-    $stmt -> bind_param("sssss",$name,$lname,$email,$password,$repassword);
+    $stmt = $conn -> prepare("INSERT INTO info(name,surname,cellphone,password,re_enter) VALUES(?,?,?,?,?);");
+    $stmt -> bind_param("sssss",$name,$sname,$cell,$password,$repassword);
     $stmt -> execute();
     echo "Successfuly signed in";   
     $stmt -> close();
